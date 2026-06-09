@@ -1,4 +1,4 @@
-import { error } from "../utils/response.js";
+import { error } from "../utils/apiResponse.js";
 
 const errorHandler = (err, req, res, next) => {
   console.error(err.stack);
