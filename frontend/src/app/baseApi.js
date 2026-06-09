@@ -3,7 +3,7 @@ import { getToken } from "../utils/tokenStorage";
 import { logout } from "../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: import.meta.env.VITE_API_BASE_URL,
+  baseUrl: import.meta.env.VITE_API_URL,
   prepareHeaders: (headers) => {
     const token = getToken();
     if (token) headers.set("Authorization", `Bearer ${token}`);
